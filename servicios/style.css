@@ -147,8 +147,10 @@ div#contenedor-tarjetas{
     background-color: rgba(161, 140, 255, 0.705) ;
 
 }
+
 div#comida{
-    display: flex;
+    display:none;
+    position: relative;
     gap: 80px;
 }
 
