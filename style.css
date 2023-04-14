@@ -28,6 +28,7 @@ body{
 
 nav{
     width: 100%;
+    background-color: black;
 }
 
 
@@ -79,6 +80,7 @@ nav{
 }
 .first-message h1{
     margin-top: 60px;
+    font-size: 40px;
 }
 .first-message h3{
     margin-top: 60px;
@@ -89,13 +91,13 @@ nav{
     text-align: center;
     justify-content: center;
     flex-direction: row;
+    width: 30%;
+    
 }
 .homepage p{
     align-items: center;
     width: 50%;
 }
-
-
 
 /* seccion de contactar */
 .contactanos{
@@ -103,20 +105,29 @@ nav{
     display: flex;
     text-align: center;
     justify-content: center;
-    flex-direction: row;
-    gap: 100px;
-    margin-right: 150px;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 100px;
+
 }
 .contactanos a{
-    
-    margin-top: 10px;
+    text-decoration: none;
+    margin-bottom: 0px;
+}
+.contactanos img{
+    width: 50px;
 }
 .social{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+
 }
 .social a{
     text-decoration: none;
+    
 }
 .contact-info{
     margin-top: 50px;

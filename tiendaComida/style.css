@@ -10,14 +10,21 @@ nav{
 
 /* nav children style*/
 .container1{
-    height: 32px;
+    background-image: url(/images/XiP3qS0.jpg);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
     text-align: center;
-    align-items: center;
+    justify-content: center;
+    gap: 250px;
+    flex-wrap:nowrap;
+    width:100%;
     font-size: 25px;
-    gap:150px
+
 }
 .container1 img{
-    width: 8%;
+    width: 6%;
 }
 .container1 div{
     display: flex;
