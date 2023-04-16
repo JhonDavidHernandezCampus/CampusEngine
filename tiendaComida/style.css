@@ -1,16 +1,28 @@
-@import url(style.css);
-@import url(js/apps.css);
+@import url(/style.css);
+@import url(/js/apps.css);
 
 /* nav style */
 nav{
     height: 52px;
 }
-
-
+/* l¿mis esttilos */
+.titulos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titulos h1{
+    margin-top: 100px;
+    font-size: 40px;
+}
+.titulos h3{
+    margin-top: 120px;
+}
 
 /* nav children style*/
 .container1{
-    background-image: url(images/XiP3qS0.jpg);
+    background-image: url(../images/XiP3qS0.jpg);
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -23,8 +35,12 @@ nav{
     font-size: 25px;
 
 }
+button:hover {
+    cursor: pointer;
+}
 .container1 img{
-    width: 6%;
+    width: 5%;
+    height: 45px;
 }
 .container1 div{
     display: flex;
@@ -38,11 +54,23 @@ height: 35px;
 .container1 div img:hover{
     cursor: pointer;
 }
+
+/* de aqui para abajo lo que tiene que ver con el carrito */
 .cart{
+    display: flex;
+    width: 39px;
+    height: 38px;
+    background-color: transparent;
+    border: 0px;
+}
+.cart img{
     width: 39px;
     height: 38px;
 }
-
+.cart span{
+    color: #fff;
+    font-size: xx-large;
+}
 
 /* Estilo del contenido del carrito*/
 .cart-products{
@@ -111,6 +139,7 @@ cursor: pointer;
     width: 200px;
     height: 160px;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 .carts p{
     font-family: system-ui;
@@ -118,20 +147,20 @@ cursor: pointer;
     padding: 0 20px;
     margin-bottom: 24px;
 }
-.carts div p{
-    position: absolute;
-    top: 0;
-    right: 0px;
+.carts p{
+    position: relative;
+    top: -205px;
+    right: -95px;
     background-color: rgb(0, 235, 129);
     color: #fff;
     padding: 2px 7px 4px 21px;
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
 }
-.carts div{
-    position: relative;
+.carts h3{
+    margin-top:20px ;
+
 }
 .carts a{
-
     font-family: system-ui;
     text-decoration: none;
     background: rgb(112, 94, 218);

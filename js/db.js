@@ -59,10 +59,8 @@ function insertar(){
     contenedorTargetas.addEventListener("click",(e)=>{
         if(e.target.name ==='btn'){
             id= parseInt(e.target.id);
-            console.log(id);
         }
     
-    console.log(id);
     modal_contenido.innerHTML=`<table>
     <caption><h1>Servicios</h1></caption>
     <thead>
@@ -83,7 +81,6 @@ function insertar(){
 }
 insertar();
 /* estos eventos son los que controlan si el model esta visible o oculto */
-console.log(id,"despues");
 /* Este evento me mantiene el modal oculto */
 modal.addEventListener("click", function(){
     modal.style.display = "none"
