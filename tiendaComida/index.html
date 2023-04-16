@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CampersEngineJhon</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../js/apps.css">
+    <link rel="stylesheet" href="../js/appsmodal2.css">
     
 </head>
 <body>
@@ -17,8 +17,20 @@
             <a class="alink" href="../index.html" >Inicio</a>
             <a class="alink" href="../servicios/index.html" >Servicios</a>
             <a class="alink" href="../soporte/index.html" >Soportes</a>
-            <button class="cart"><img src="../images/cart-regular-24.png" alt="" srcset="" id="carrito"><span>0</span></button>
-        </section>
+            
+                <button class="cart" onclick="hola()"><img src="../images/cart-regular-24.png" alt="" srcset="" id="carrito"><span>0</span></button>
+            <div class="modal">
+                <div id="modal-contenido">
+                    <div>hola</div>
+                    <div>hola</div>
+                    <div>hola</div>
+                    <div>hola</div>
+                    <button onclick="cerrar()">X</button>
+                </div>
+            
+            </div>
+        
+            </section>
     </nav>
     <section class="titulos">
         <h1>Cafeteria Virtual</h1>
@@ -32,26 +44,32 @@
             <h3>Papas</h3>
             <p>2000$</p>
             <a href="">AÑADIR AL CARRITO</a>
-
-
         </div>
         <div class="carts">
             <img src="../images/Pastel-de-Pollo7.jpg" alt="">
             <h3>Pasteles</h3>
             <p>2300$</p>
             <a href="">AÑADIR AL CARRITO</a>
-
-
         </div>
         <div class="carts">
             <img src="../images/Color-del-cafe-filtrado-y-su-parecido-con-el-color-de-un-vino-tinto.-scaled.jpg" alt="">
             <h3>Cafe</h3>
             <p>800$</p>
-            <a href="">AÑADIR AL CARRITO</a>
-
-
+            <a href="" onclick="hola()">AÑADIR AL CARRITO</a>
         </div>
     </section>
+
     <script src="../js/tienda.js" ></script>
 </body>
+<script>
+    const div = document.querySelector(".modal");
+    div.style.display= "none";
+
+    function hola(){
+        div.style.display = "block";
+    }
+    function cerrar(){
+        div.style.display="none"
+    }
+</script>
 </html>
