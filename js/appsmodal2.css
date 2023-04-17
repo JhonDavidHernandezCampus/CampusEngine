@@ -5,6 +5,17 @@ img#logo{
   align-items: center;
 }
 
+/* elementos del carrito */
+.elemento{
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+.elemento button{
+  width: 15%;
+}
+
 /* style predefinido para los modals*/
 .modal{
     display: none ;
@@ -12,7 +23,7 @@ img#logo{
     z-index: 1;
     right: 0;
     top: 0;
-    width: 30%;
+    width: 20%;
     height: 100%;
     overflow: auto;
   }

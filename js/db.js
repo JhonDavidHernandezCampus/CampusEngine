@@ -37,14 +37,8 @@ class zona{
 let obj = undefined; 
 let id = 0;
 
-obj = new zona({
-    nombre:datos[0].nombre,
-    detalles:datos[0].detalles,
-    disponibilidad:datos[0].disponibilidad
-});
-
 /* creamos 4 objetos de la clase zona con los datos de nuestro array */
-let zonas = datos.map(e => new zona ({
+let zonas = datos.map((e) => new zona ({
     nombre:e.nombre,
     detalles:e.detalles,
     disponibilidad: e.disponibilidad
