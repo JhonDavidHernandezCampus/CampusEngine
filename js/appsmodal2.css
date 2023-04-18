@@ -6,15 +6,14 @@ img#logo{
 }
 
 /* elementos del carrito */
-.elemento{
+#elemento{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
   color: black;
 }
 
-.elemento button{
-  width: 15%;
-}
 
 /* style predefinido para los modals*/
 .modal{
@@ -47,7 +46,7 @@ img#logo{
     border-radius: 5px;
     color: white;
     width: 20%;
-
+    margin: 20px;
   }
 
   .close {
