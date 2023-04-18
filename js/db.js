@@ -22,6 +22,7 @@ let datos=[
     }
 
 ]
+
 class zona{
     constructor({
         nombre="",

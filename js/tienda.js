@@ -1,6 +1,6 @@
 //script funcionalidad de carrito y tienda
 /* funciones contadoras y acumuladoras */
-let cantidad =0,cantPapas=0,cantPasteles=0,cantCafes=0;
+let cantidad =0,cantPapas=0,cantPasteles=0,cantCafes=0,cont = 1 ;
 class productos{
     constructor({
         nombre="",
@@ -42,6 +42,8 @@ function cerrar(){
 
 
 /* eventos de los botones */
+
+const contador = document.querySelector("#cont");
 const aPapas = document.querySelector("#papas");
 const aPasteles= document.querySelector("#pasteles");
 const aCafe = document.querySelector("#cafe");  
@@ -49,13 +51,15 @@ const aCafe = document.querySelector("#cafe");
 
 
 let btnAgregar=[aPapas,aPasteles,aCafe];
-console.log(btnAgregar);
-console.log(productos);
 
 btnAgregar.forEach((boton)=>{
     boton.addEventListener("click", (e)=>{
         e.preventDefault();
+        contador.innerHTML=cont;
+        zona
+        console.log(contador);
         
+        console.log(cont);
 
 
     });

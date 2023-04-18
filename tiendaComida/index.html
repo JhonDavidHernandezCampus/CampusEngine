@@ -18,21 +18,19 @@
             <a class="alink" href="../servicios/index.html" >Servicios</a>
             <a class="alink" href="../soporte/index.html" >Soportes</a>
             
-            <button class="cart" onclick="hola()"><img src="../images/cart-regular-24.png" alt="" srcset="" id="carrito"><span>0</span></button>
+            <button class="cart" onclick="hola()"><img src="../images/cart-regular-24.png" alt="" srcset="" id="carrito"> <span id="cont"></span> </button>
             <div class="modal">
                 <div id="modal-contenido">
-
-                    
                     <div id="elemento">
                         <img src="../images/papasmargarita.jpg" alt="">
                         <h3>Papas</h3>
                         <p class="precioPapas">2000 <d>$</d></p>
-                        <button>X</button>
+                        <span>cantidad: 0</span>
+                        <button id="restar">X</button>
                     </div>
-
-
-                    <button onclick="cerrar()">X</button>
-                </div>
+                    <hr>
+                    <div class="total"><h1>Total: <span>0</span></h1></div>
+                    <button onclick="cerrar()" id="cerrar">X</button>
             </div>
         
             </section>
